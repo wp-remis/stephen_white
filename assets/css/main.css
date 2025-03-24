@@ -23,6 +23,18 @@
   --container-8xl: 1200px;
 }
 
+@layer base {
+  body {
+    overflow-x: hidden;
+  }
+
+  footer picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
 /***** Reusable components *****/
 
 @layer components {
@@ -45,6 +57,16 @@
     @apply inline-block w-auto px-[19px] py-[10px] md:py-[10px] rounded-[5px] bg-blue text-[16px] font-black leading-[1.5]
            text-center text-white font-grotesk border-none cursor-pointer hover:bg-link-color hover:text-white
            transition-colors duration-200;
+  }
+}
+
+/***** About *****/
+
+@layer components {
+  .about-image picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 }
 
@@ -212,6 +234,12 @@
     @apply rounded-[15px] overflow-hidden relative;
   }
 
+  .gallery-image picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
   .gallery-image::before {
     content: "";
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.01), #000 150%);
@@ -262,6 +290,12 @@
     @apply block w-full rounded-[25px] overflow-hidden relative;
   }
 
+  .service picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
   .service::before {
     content: "";
     background-image: linear-gradient(to bottom, rgba(5, 74, 134, 0.01) 50%, #054a86 203%);
@@ -310,6 +344,12 @@
 /***** Hero *****/
 
 @layer components {
+  .hero picture img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+
   .hero::after {
     content: "";
     background-image: linear-gradient(to right, #333 0%, #333 25%, rgba(26, 26, 26, 0) 100%);
@@ -418,7 +458,7 @@
     @apply block w-full mb-[32px];
   }
 
-  .form-side-text h4 {
+  .form-side-text h3 {
     @apply block w-full mb-[11px] text-[24px] font-bold leading-none tracking-[-0.48px]
            text-center text-heading-text font-grotesk;
   }
