@@ -8,7 +8,7 @@ $anchor     = get_field( 'anchor_id' );
     <div class="container-small">
         <div class="md:flex md:gap-x-[45px] lg:gap-x-[90px]">
             <?php if ( ! empty( $side_image ) ) : ?>
-                <div class="w-full md:w-[44.5%] mb-[21px] md:mb-[0px] aspect-[1/1] rounded-[15px] overflow-hidden">
+                <div class="about-image w-full md:w-[44.5%] mb-[21px] md:mb-[0px] aspect-[1/1] rounded-[15px] overflow-hidden">
                     <?php
                     echo wp_get_attachment_image( $side_image, 'full', false, [
                         'class' => 'w-full h-full object-cover',
