@@ -24,7 +24,7 @@ $anchor       = get_field( 'anchor_id' );
             ?>
 
             <?php if ( ! empty( $button_text ) && ! empty( $button_link ) ) : ?>
-                <a hef="<?php echo esc_url( $button_link ); ?>" class="button">
+                <a href="<?php echo esc_url( $button_link ); ?>" class="button">
                     <?php echo esc_html( $button_text ); ?>
                 </a>
             <?php endif; ?>
