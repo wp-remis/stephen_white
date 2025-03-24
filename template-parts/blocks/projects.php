@@ -17,11 +17,21 @@ $anchor      = get_field( 'anchor_id' );
             <div class="swiper-wrapper">
                 <?php foreach ( $slides as $slide ) : ?>
                     <div class="swiper-slide pt-[142px] pb-[24px] px-[29px] rounded-[20px] bg-darker-marble relative">
-                        <?php
-                        echo wp_get_attachment_image( $slide['logo'], 'full', false, [
-                            'class' => 'max-w-[100%] w-auto mb-[23px] absolute top-[24px] left-[29px]',
-                        ] );
-                        ?>
+                        <?php if ( ! empty( $slide['logo_url'] ) ) : ?>
+                            <a href="<?php echo esc_url( $slide['logo_url'] );?>" target="_blank" title="<?php echo esc_attr( $slide['companytitle'] ); ?>">
+                                <?php
+                                echo wp_get_attachment_image( $slide['logo'], 'full', false, [
+                                    'class' => 'max-w-[100%] w-auto mb-[23px] absolute top-[24px] left-[29px]',
+                                ] );
+                                ?>
+                            </a>
+                        <?php else: ?>
+                            <?php
+                            echo wp_get_attachment_image( $slide['logo'], 'full', false, [
+                                'class' => 'max-w-[100%] w-auto mb-[23px] absolute top-[24px] left-[29px]',
+                            ] );
+                            ?>
+                        <?php endif; ?>
 
                         <strong class="mb-[10px] block w-full text-[24px] font-medium leading-none tracking-normal text-left text-black font-grotesk">
                             <?php echo esc_html( $slide['companytitle'] ); ?>

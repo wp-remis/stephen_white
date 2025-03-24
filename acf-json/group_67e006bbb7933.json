@@ -136,6 +136,25 @@
                     "parent_repeater": "field_67e007284c0d9"
                 },
                 {
+                    "key": "field_67e174d505da5",
+                    "label": "Logo URL",
+                    "name": "logo_url",
+                    "aria-label": "",
+                    "type": "url",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "allow_in_bindings": 0,
+                    "placeholder": "",
+                    "parent_repeater": "field_67e007284c0d9"
+                },
+                {
                     "key": "field_67e007584c0db",
                     "label": "Company\/Title",
                     "name": "companytitle",
@@ -221,5 +240,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1742805958
+    "modified": 1742828769
 }
