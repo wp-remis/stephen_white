@@ -16,7 +16,7 @@ $anchor = get_field( 'anchor_id' );
                             <?php echo wp_get_attachment_image( $images[0]['background_image'], 'medium', false, [ 'class' => 'w-full h-full object-cover' ] ); ?>
 
                             <div class="gallery-image-content">
-                                <img src="<?php echo esc_url( $images[0]['icon'] ); ?>" class="mb-[10px] md:mb-[7px]" />
+                                <img src="<?php echo esc_url( $images[0]['icon'] ); ?>" class="mb-[10px] md:mb-[7px]" alt="<?php echo esc_attr( $images[0]['icon_alt'] ); ?>" />
 
                                 <?php echo wp_kses_post( $images[0]['text'] ); ?>
                             </div>
@@ -28,7 +28,7 @@ $anchor = get_field( 'anchor_id' );
                             <?php echo wp_get_attachment_image( $images[1]['background_image'], 'medium', false, [ 'class' => 'w-full h-full object-cover' ] ); ?>
 
                             <div class="gallery-image-content">
-                                <img src="<?php echo esc_url( $images[1]['icon'] ); ?>" class="mb-[10px] md:mb-[7px]" />
+                                <img src="<?php echo esc_url( $images[1]['icon'] ); ?>" class="mb-[10px] md:mb-[7px]" alt="<?php echo esc_attr( $images[1]['icon_alt'] ); ?>" />
 
                                 <?php echo wp_kses_post( $images[1]['text'] ); ?>
                             </div>
@@ -42,7 +42,7 @@ $anchor = get_field( 'anchor_id' );
                             <?php echo wp_get_attachment_image( $images[2]['background_image'], 'large', false, [ 'class' => 'w-full h-full object-cover' ] ); ?>
 
                             <div class="gallery-image-content">
-                                <img src="<?php echo esc_url( $images[2]['icon'] ); ?>" class="mb-[10px] md:mb-[7px]" />
+                                <img src="<?php echo esc_url( $images[2]['icon'] ); ?>" class="mb-[10px] md:mb-[7px]" alt="<?php echo esc_attr( $images[2]['icon_alt'] ); ?>" />
 
                                 <?php echo wp_kses_post( $images[2]['text'] ); ?>
                             </div>
@@ -56,7 +56,7 @@ $anchor = get_field( 'anchor_id' );
                             <?php echo wp_get_attachment_image( $images[3]['background_image'], 'medium', false, [ 'class' => 'w-full h-full object-cover' ] ); ?>
 
                             <div class="gallery-image-content">
-                                <img src="<?php echo esc_url( $images[3]['icon'] ); ?>" class="mb-[10px] md:mb-[7px]" />
+                                <img src="<?php echo esc_url( $images[3]['icon'] ); ?>" class="mb-[10px] md:mb-[7px]" alt="<?php echo esc_attr( $images[3]['icon_alt'] ); ?>" />
 
                                 <?php echo wp_kses_post( $images[3]['text'] ); ?>
                             </div>
@@ -68,7 +68,7 @@ $anchor = get_field( 'anchor_id' );
                             <?php echo wp_get_attachment_image( $images[4]['background_image'], 'medium', false, [ 'class' => 'w-full h-full object-cover' ] ); ?>
 
                             <div class="gallery-image-content">
-                                <img src="<?php echo esc_url( $images[4]['icon'] ); ?>" class="mb-[10px] md:mb-[7px]" />
+                                <img src="<?php echo esc_url( $images[4]['icon'] ); ?>" class="mb-[10px] md:mb-[7px]" alt="<?php echo esc_attr( $images[4]['icon_alt'] ); ?>" />
 
                                 <?php echo wp_kses_post( $images[4]['text'] ); ?>
                             </div>
