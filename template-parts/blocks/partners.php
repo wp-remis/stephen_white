@@ -6,7 +6,7 @@ $partners    = get_field( 'partners_list' );
 $anchor      = get_field( 'anchor_id' );
 ?>
 
-<div id="<?php echo esc_attr( $anchor ); ?>" class="partners block w-[100vw] pt-[26px] pb-[29px] md:pt-[76px] md:pb-[75px] relative left-1/2 translate-x-[-50%] bg-darker-marble">
+<div id="<?php echo esc_attr( $anchor ); ?>" class="partners block max-width-[100vw] w-[100vw] overflow-hidden pt-[26px] pb-[29px] md:pt-[76px] md:pb-[75px] relative left-1/2 translate-x-[-50%] bg-darker-marble">
     <div class="container-small">
         <div class="md:flex md:gap-x-[45px] lg:gap-x-[105px]">
             <div class="text-content-spaced w-full md:flex-1 lg:pt-[99px] lg:pb-[91px] mb-[60px] md:mb-[0px]">

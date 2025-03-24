@@ -6,7 +6,7 @@ $button_link  = get_field( 'button_url' );
 $anchor       = get_field( 'anchor_id' );
 ?>
 
-<div id="<?php echo esc_attr( $anchor ); ?>" class="hero block w-[100vw] pt-[103px] pb-[168px] md:pt-[243px] md:pb-[188px] relative left-1/2 translate-x-[-50%]">
+<div id="<?php echo esc_attr( $anchor ); ?>" class="hero block max-width-[100vw] w-[100vw] overflow-hidden pt-[103px] pb-[168px] md:pt-[243px] md:pb-[188px] relative left-1/2 translate-x-[-50%]">
     <?php
     if ( ! empty( $hero_bg ) ) :
         echo wp_get_attachment_image( $hero_bg, 'full', false, [

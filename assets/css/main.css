@@ -23,6 +23,12 @@
   --container-8xl: 1200px;
 }
 
+@layer base {
+  body {
+    overflow-x: hidden;
+  }
+}
+
 /***** Reusable components *****/
 
 @layer components {
