@@ -35,7 +35,7 @@ $logo = get_field( 'logo', 'option' );
 
         <!-- Logo -->
         <div class="site-branding shrink-0">
-            <a href="<?php echo esc_url( home_url( '/' ) );?>" rel="home">
+            <a href="<?php echo esc_url( home_url( '/' ) );?>" rel="home" title="<?php echo esc_attr( get_bloginfo('name') ); ?>">
                 <img src="<?php echo esc_url( $logo );?>" alt="Site Logo" class="max-h-[26px] xl:max-h-[38px]" />
             </a>
         </div>

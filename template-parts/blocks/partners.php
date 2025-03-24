@@ -28,7 +28,7 @@ $anchor      = get_field( 'anchor_id' );
 
                     <div class="aspect-[1.714] flex items-center justify-center">
                         <?php if ( ! empty( $partner_url ) ) : ?>
-                            <a href="<?php echo esc_url( $partner_url );?>" target="_blank" rel="noopener noreferrer">
+                            <a href="<?php echo esc_url( $partner_url ); ?>" target="_blank" title="<?php echo esc_attr( $partner['partner_name'] ); ?>">
                                 <?php
                                 echo wp_get_attachment_image( $partner_logo, 'full', false, [
                                     'class' => 'max-h-full max-w-full object-contain',
