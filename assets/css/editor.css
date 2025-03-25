@@ -432,6 +432,13 @@ html :where(.wp-block) {
   font-family: var(--font-grotesk) !important;
 }
 
+.gallery-image > img,
+.gallery-image > picture > img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+}
+
 @media (min-width: 768px) {
   .gallery-image-content p {
     line-height: 1.33 !important;
