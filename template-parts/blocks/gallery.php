@@ -13,7 +13,7 @@ $anchor = get_field( 'anchor_id' );
                 <div class="flex flex-col gap-[21px]">
                     <?php if ( !empty( $images[0] ) ) : ?>
                         <div class="aspect-[1.458] gallery-image">
-                            <?php echo wp_get_attachment_image( $images[0]['background_image'], 'medium', false, [ 'class' => 'w-full h-full object-cover' ] ); ?>
+                            <?php echo wp_get_attachment_image( $images[0]['background_image'], 'medium', false, [ 'class' => 'w-full h-full object-cover brightness-130' ] ); ?>
 
                             <div class="gallery-image-content">
                                 <img src="<?php echo esc_url( $images[0]['icon'] ); ?>" class="mb-[10px] md:mb-[7px]" alt="<?php echo esc_attr( $images[0]['icon_alt'] ); ?>" />
@@ -25,7 +25,7 @@ $anchor = get_field( 'anchor_id' );
 
                     <?php if ( !empty( $images[1] ) ) : ?>
                         <div class="aspect-[1.124] gallery-image">
-                            <?php echo wp_get_attachment_image( $images[1]['background_image'], 'medium', false, [ 'class' => 'w-full h-full object-cover' ] ); ?>
+                            <?php echo wp_get_attachment_image( $images[1]['background_image'], 'medium', false, [ 'class' => 'w-full h-full object-cover brightness-130' ] ); ?>
 
                             <div class="gallery-image-content">
                                 <img src="<?php echo esc_url( $images[1]['icon'] ); ?>" class="mb-[10px] md:mb-[7px]" alt="<?php echo esc_attr( $images[1]['icon_alt'] ); ?>" />
@@ -39,7 +39,7 @@ $anchor = get_field( 'anchor_id' );
                 <div>
                     <?php if ( !empty( $images[2] ) ) : ?>
                         <div class="h-full gallery-image">
-                            <?php echo wp_get_attachment_image( $images[2]['background_image'], 'large', false, [ 'class' => 'w-full h-full object-cover' ] ); ?>
+                            <?php echo wp_get_attachment_image( $images[2]['background_image'], 'large', false, [ 'class' => 'w-full h-full object-cover brightness-130' ] ); ?>
 
                             <div class="gallery-image-content">
                                 <img src="<?php echo esc_url( $images[2]['icon'] ); ?>" class="mb-[10px] md:mb-[7px]" alt="<?php echo esc_attr( $images[2]['icon_alt'] ); ?>" />
@@ -53,7 +53,7 @@ $anchor = get_field( 'anchor_id' );
                 <div class="flex flex-col gap-[21px]">
                     <?php if ( !empty( $images[3] ) ) : ?>
                         <div class="aspect-[1.128] gallery-image">
-                            <?php echo wp_get_attachment_image( $images[3]['background_image'], 'medium', false, [ 'class' => 'w-full h-full object-cover' ] ); ?>
+                            <?php echo wp_get_attachment_image( $images[3]['background_image'], 'medium', false, [ 'class' => 'w-full h-full object-cover brightness-130' ] ); ?>
 
                             <div class="gallery-image-content">
                                 <img src="<?php echo esc_url( $images[3]['icon'] ); ?>" class="mb-[10px] md:mb-[7px]" alt="<?php echo esc_attr( $images[3]['icon_alt'] ); ?>" />
@@ -65,7 +65,7 @@ $anchor = get_field( 'anchor_id' );
 
                     <?php if ( !empty( $images[4] ) ) : ?>
                         <div class="aspect-[1.460] gallery-image">
-                            <?php echo wp_get_attachment_image( $images[4]['background_image'], 'medium', false, [ 'class' => 'w-full h-full object-cover' ] ); ?>
+                            <?php echo wp_get_attachment_image( $images[4]['background_image'], 'medium', false, [ 'class' => 'w-full h-full object-cover brightness-130' ] ); ?>
 
                             <div class="gallery-image-content">
                                 <img src="<?php echo esc_url( $images[4]['icon'] ); ?>" class="mb-[10px] md:mb-[7px]" alt="<?php echo esc_attr( $images[4]['icon_alt'] ); ?>" />
