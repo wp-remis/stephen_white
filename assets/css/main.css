@@ -47,7 +47,7 @@
     @apply mx-auto max-w-[1194px] px-[20px] md:px-8;
   }
 
-  .button {
+  .rounded-button {
     @apply inline-block w-auto px-[19px] md:px-[31px] py-[10px] md:py-[16px] rounded-[5px] bg-blue text-[16px] font-black leading-[1.5]
            text-center text-white font-grotesk border-none cursor-pointer hover:bg-link-color hover:text-white
            transition-colors duration-200;
